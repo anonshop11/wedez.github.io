@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drak WED</title>
+
+
+    <style>
+         :root {
+            --bg-color: #0A0A0A;
+            --text-color: #E0E0E0;
+            --accent-glow: #00FFFF;
+            --font-stack: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-stack);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: space-between;
+        }
+        
+        .header-top {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 30px 50px 0 50px;
+        }
+        
+        .logo-text {
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            font-size: 1.5em;
+            color: var(--accent-glow);
+            text-shadow: 0 0 15px var(--accent-glow);
+        }
+        
+        .logo-dot {
+            display: none;
+        }
+        
+        .main-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 80px;
+            padding: 50px;
+            flex-grow: 1;
+        }
+        
+        .profile-section {
+            display: none;
+        }
+        
+        .text-section {
+            text-align: center;
+        }
+        
+        .text-section h1 {
+            font-size: 5em;
+            margin-bottom: 0.1em;
+            color: var(--accent-glow);
+            text-shadow: 0 0 10px var(--accent-glow);
+        }
+        
+        .text-section h2 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+        
+        .text-section p {
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.8;
+            font-size: 1.1em;
+        }
+        
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 50px;
+            border-top: 1px solid #222;
+            font-size: 0.8em;
+            color: #777;
+        }
+        
+        .footer-left span,
+        .footer-right span {
+            margin-right: 30px;
+        }
+        
+        @media (max-width: 900px) {
+            .main-content {
+                padding: 30px;
+            }
+            .text-section h1 {
+                font-size: 3em;
+            }
+            .header-top,
+            .footer-bottom {
+                padding: 20px 20px;
+            }
+            .footer-bottom {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <audio id="background-music" loop autoplay style="display: none;">
+        <source src="/SEA -  Balance Feat SEXSKI Full Band Ver.mp3" type="audio/mp3">
+    </audio>
+    <header class="header-top">
+
+        <div class="logo-text">
+            คิดชื่อไม่ออกว่ะ         </div>
+    </header>
+
+
+    <main class="main-content">
+
+        <div class="profile-section"></div>
+
+
+        <div class="text-section">
+
+            <h1>มึงโดนhack ข้อมุลแล้วhahahah กูคือhackker คลิปรูปหมดโทรศัพคอมมึงแล้ว กูราชาhackker อันดับหนึ่ง</h1>
+            <h2>ไม่อยากเสียข้อมูลส่วนตัวหรือรูปหลุดต่างๆก็รีบติดต่อ discord:adasdw111</h2>
+            <br>
+            <p style="color: var(--accent-glow); text-shadow: 0 0 3px var(--accent-glow);">55555โง่จริงๆโดนกูดูดหมดดิ</p>
+
+            <p>
+            </p>
+        </div>
+    </main>
+
+
+    <footer class="footer-bottom">
+
+        <div class="footer-left">
+            <span> </span>             <span></span>         </div>
+
+        <div class="footer-right">
+            <span>Follow Me discord:adasdw111  ♥</span>             <span style="color: var(--accent-glow);">© 2025 By นนท์56</span>         </div>
+    </footer>
+
+
+    <script>
+        const audio = document.getElementById('background-music');
+
+                
+        audio.volume = 0.2;
+
+                
+        function attemptAutoplay() {      
+            audio.play().then(() => {        
+                console.log("เพลงเล่นอัตโนมัติสำเร็จ!");        
+                document.removeEventListener('click', attemptAutoplay);        
+                document.removeEventListener('touchstart', attemptAutoplay);      
+            }).catch(error => {        
+                console.log("Autoplay ถูกบล็อก: รอการคลิก/สัมผัสครั้งแรกจากผู้ใช้...");      
+            });    
+        }
+
+                
+        attemptAutoplay();
+
+                
+        document.addEventListener('click', attemptAutoplay);    
+        document.addEventListener('touchstart', attemptAutoplay);
+    </script>
+
+</body>
+
+</html>
